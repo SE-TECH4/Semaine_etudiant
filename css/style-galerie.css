@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F9FAFB;
+}
+.template-galerie header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #00334F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px 15px 20px;
+}
+header .logo{
+    font-family: 'BBH Sans Bogle', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.logo .logo-AEST{
+    height: 50px;
+    width: 60px;
+    overflow: hidden;
+}
+.logo .logo-AEST img{
+    height: 50px;
+    width: 60px;
+    object-fit: cover;
+}
+.logo h1{
+    color: white;
+    font-size: 2.3rem;
+}
+.logo h1 span{
+    color: rgb(218, 5, 5);
+}
+
+.navigation nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navigation{
+    margin-left: auto;
+}
+.navigation nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+.navigation nav ul a:hover{
+    color: #FBBF24;
+    
+}
+.navigation nav ul a li{
+    list-style: none;
+}
+
+header .btnPay{
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+.btnPay a{
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background-color: #f3c921;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btnPay a:hover{
+    background-color: #e6b91e;
+}
+.btnPay:hover{
+    transform: scale(1.05);
+}
+
+#gal{
+    color: #FBBF24;
+    font-weight: bold;
+}
+
+.hamburger-menu{
+    display: none;
+}
+.hamburger-menu .fa-bars{
+    display: none;
+}
+.close-menu{
+    display: none;
+}
+.close-menu .fa-xmark{
+    display: none;
+}
+
+footer{
+    background: #003C4B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 30px 0;
+}
+#slogan-AEST{
+    margin-top: 17px;
+    color: #D1D5DB;
+    font-size: 0.9rem;
+}
+footer a{
+    color: #FFCC00;
+}
+
+#btnPay2{
+    display: none;
+}
+
+.box-item .liste{
+    display: none;
+}
+.box-item .btnPlus{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: #4B5563;
+    font-size: 1.2rem;
+    padding: 5px 7px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.box-item .btnPlus:hover{
+    background-color: rgba(220, 220, 220, 0.438);
+}
+
+.template-galerie main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .banner{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+main .banner h2{
+    color: #004c75;
+    font-size: 1.5rem;
+}
+main .banner p{
+    color: #4d4d4d;
+    font-size: 0.9rem;
+}
+main .box-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 0 30px;
+}
+.box-img .box-img-item{
+    position: relative;
+    border: solid 1px rgb(171, 174, 183);
+    height: 250px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.box-img .box-img-item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px rgba(77, 77, 77, 0.189);
+}
+.box-img .box-img-item h3{
+    font-size: 1rem;
+}
+.box-img .box-img-item a{
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(21, 155, 0);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 2px rgb(103, 169, 103);
+    transition: all 0.3s ease;
+}
+.box-img .box-img-item a:hover{
+    transform: translate(5px, 5px);
+    box-shadow: none;
+}
+.box-img .box-img-item .logo{
+    position: absolute;
+    display: flex;
+    zoom: 0.3;
+    bottom: 15px;
+    right: 35px;
+}
+.box-img .box-img-item .logo h1{
+    color: black;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .hamburger-menu{
+        display: flex;
+        align-items: center;
+    }
+    .hamburger-menu .fa-bars{
+        display: flex;
+        color: white;
+        font-size: 2rem;
+    }
+    .close-menu .fa-xmark{
+        display: flex;
+        color: white;
+        font-size: 2rem;
+    }
+    .template-galerie header{
+        padding: 20px 10px 20px 10px;
+    }
+    header .logo h1{
+        font-size: 1.6rem;
+    }
+    .logo .logo-AEST{
+        height: 42px;
+        width: 50px;
+        overflow: hidden;
+    }
+    .logo .logo-AEST img{
+        height: 42px;
+        width: 50px;
+        object-fit: cover;
+    }
+    .navigation{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #3333338f;
+        height: 100vh;
+        width: 100%;
+        transform: translate(-1200px);
+        transition: all 0.3s ease;
+    }
+    .navigation nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #00334F;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 300px;
+        align-items: center;
+    }
+    .navigation nav .close-menu i{
+        font-size: 2.3rem;
+        color: gainsboro;
+    }
+    .navigation nav .close-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 70px;
+    }
+    .navigation nav ul{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        border-top: solid 1px gray;
+        padding: 0 0px;
+        padding-top: 20px;
+    }
+    .navigation nav ul a{
+        font-size: 1.4rem;
+        background-color: #004c75;
+        padding: 10px 40px;
+        border-radius: 5px;
+    }
+    #btnPay2{
+        display: flex;
+        margin-top: 20px;
+    }
+    #btnPay2 a{
+        color: #003366;
+        text-decoration: none;
+        background-color: #FBBF24;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 7px;
+        transition: all 0.3s ease;
+    }
+    #btnPay2 a:hover{
+        background-color: #f8c84f;
+        transform: scale(1.05);
+    }
+
+    footer{
+        font-size: 0.8rem;
+        padding: 20px;
+        text-align: center;
+    }
+    footer p:nth-child(1){
+        line-height: 1.4;
+    }
+    
+    #slogan-AEST{
+        font-size: 0.77rem;
+    }
+    header .btnPay{
+        display: none;
+    }
+
+    .box-item .btnPlus{
+        right: 10px;
+    }
+    .box-prog .box-item h3{
+        font-size: 0.9rem;
+        padding-right: 20px;
+    }
+
+    main .box-img{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
+    .box-img .box-img-item{
+        height: 170px;
+        text-align: center;
+    }
+    .box-img .box-img-item h3{
+        font-size: 0.8rem;
+    }
+    .box-img .box-img-item a{
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+    .box-img .box-img-item .logo{
+        zoom: 0.2;
+        bottom: 5px;  /* Changé de top à bottom */
+        right: 25px;   /* Changé de left à right */
+        z-index: 1;   /* Assure que le logo reste en arrière-plan */
+    }
+    .box-img .box-img-item a{
+        position: relative;  /* Ajout de position relative */
+        z-index: 2;         /* Place le bouton au-dessus du logo */
+    }
+    main .banner p{
+        text-align: center;
+        padding: 0 15px;
+    }
+}
