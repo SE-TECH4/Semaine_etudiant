@@ -160,17 +160,6 @@ main .box{
 }
 
 
-.countdown {
-    background-color: #ff0000;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0 20px;
-    border-radius: 5px;
-}
-
 .box .link-inscription{
     display: flex;
     flex-direction: column;
@@ -220,13 +209,46 @@ footer a{
     display: none;
 }
 
-@media (max-width: 768px) {
-    .countdown {
-        font-size: 0.9rem;
-        padding: 10px;
-        margin: 0 10px;
-    }
+#countdown{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+#countdown .tag{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(213, 1, 1);
+    height: 70px;
+    width: 80px;
+    border-radius: 10px;
+}
+#countdown .tag span{
+    color: white;
+}
+#countdown .tag span:nth-child(1){
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+#countdown .tag span:nth-child(2){
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+#countdown .end{
+    background-color: rgb(218, 5, 5);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
 
+@media (max-width: 768px) {
     .hamburger-menu{
         display: flex;
         align-items: center;
@@ -364,5 +386,18 @@ footer a{
     #btnPay2 a:hover{
         background-color: #f8c84f;
         transform: scale(1.05);
+    }
+
+    #countdown .tag{
+        height: 60px;
+        width: 65px;
+        gap: 1px;
+    }
+    #countdown .tag span:nth-child(1){
+        font-size: 1.4rem;
+    }
+    #countdown .tag span:nth-child(2){
+        font-size: 0.6rem;
+        font-weight: bold;
     }
 }
