@@ -155,6 +155,9 @@ header .btnPay{
     font-size: 1.1rem;
     color: white;
 }
+#date span{
+    font-weight: bold;
+}
 .banner .btn{
     display: flex;
     align-items: center;
@@ -485,3 +488,4 @@ footer a{
         transform: scale(1.05);
     }
 }
+
