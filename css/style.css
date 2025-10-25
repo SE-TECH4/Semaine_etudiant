@@ -107,6 +107,16 @@ header .btnPay{
     display: none;
 }
 
+.countdown {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .template-accueil .banner{
     background: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -266,6 +276,11 @@ footer a{
 }
 
 @media (max-width: 768px){
+    .countdown {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    
     .template-accueil .banner{
         gap: 20px;
     }
