@@ -107,16 +107,6 @@ header .btnPay{
     display: none;
 }
 
-.countdown {
-    background-color: #ff0000;
-    color: white;
-    padding: 15px;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
 .template-accueil .banner{
     background: rgba(0, 0, 0, 0.4);
     display: flex;
@@ -278,12 +268,45 @@ footer a{
     color: #FBBF24;
 }
 
+#countdown{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#countdown .tag{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(213, 1, 1);
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+#countdown .tag span{
+    color: white;
+}
+#countdown .tag span:nth-child(1){
+    font-size: 2rem;
+    font-weight: bold;
+}
+#countdown .tag span:nth-child(2){
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+#countdown .end{
+    background-color: rgb(218, 5, 5);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 @media (max-width: 768px){
-    .countdown {
-        font-size: 1rem;
-        padding: 10px;
-    }
-    
     .template-accueil .banner{
         gap: 20px;
     }
@@ -487,5 +510,18 @@ footer a{
         background-color: #f8c84f;
         transform: scale(1.05);
     }
-}
 
+    #countdown .tag{
+        height: 80px;
+        width: 80px;
+        gap: 2px;
+    }
+    #countdown .tag span:nth-child(1){
+        font-size: 1.8rem;
+    }
+    #countdown .tag span:nth-child(2){
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    
+}
