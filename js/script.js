@@ -35,3 +35,44 @@ btnPluses.forEach(btnPlus => {
         }
     });
 });
+
+
+let countDownDate = new Date('dec 13, 2025 00:00:00').getTime();
+let x = setInterval(function () {
+    let now = new Date().getTime();
+    let distance = countDownDate - now;
+
+    let days = Math.floor(distance / (1000*60*60*24));
+    let hours = Math.floor(distance % (1000*60*60*24) / (1000*60*60));
+    let minutes = Math.floor(distance % (1000*60*60) / (1000*60));
+    let seconds = Math.floor(distance % (1000*60) / (1000));
+    
+    days = String(days).padStart(2, '0');
+    hours = String(hours).padStart(2, '0');
+    minutes = String(minutes).padStart(2, '0');
+    seconds = String(seconds).padStart(2, '0');
+
+    document.querySelector("#countdown").innerHTML = `
+        <div class="tag">
+            <span class="value">${days}</span>
+            <span class="label">Jour(s)</span>
+        </div>
+        <div class="tag">
+            <span class="value">${hours}</span>
+            <span class="label">Heure(s)</span>
+        </div>
+        <div class="tag">
+            <span class="value">${minutes}</span>
+            <span class="label">Minute(s)</span>
+        </div>
+        <div class="tag">
+            <span class="value">${seconds}</span>
+            <span class="label">Seconde(s)</span>
+        </div>
+    `;
+    
+    if (distance < 0) {
+        clearInterval(x);
+        document.querySelector("#countdown").innerHTML = '<span class="end">Terminé !</span>';
+    }
+}, 1000);
