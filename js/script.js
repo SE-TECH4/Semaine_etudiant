@@ -73,6 +73,7 @@ let x = setInterval(function () {
     
     if (distance < 0) {
         clearInterval(x);
-        document.querySelector("#countdown").innerHTML = '<span class="end">Terminé !</span>';
+        document.querySelector("#countdown").innerHTML = '<span class="end">🚀 On ne compte plus… On vit !</span>';
     }
 }, 1000);
+
