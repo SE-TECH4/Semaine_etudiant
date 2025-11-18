@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F9FAFB;
+}
+.template-programme header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #00334F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px 15px 20px;
+}
+header .logo{
+    font-family: 'BBH Sans Bogle', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.logo .logo-AEST{
+    height: 50px;
+    width: 60px;
+    overflow: hidden;
+}
+.logo .logo-AEST img{
+    height: 50px;
+    width: 60px;
+    object-fit: cover;
+}
+.logo h1{
+    color: white;
+    font-size: 2.3rem;
+}
+.logo h1 span{
+    color: rgb(218, 5, 5);
+}
+
+.navigation nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navigation{
+    margin-left: auto;
+}
+.navigation nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+.navigation nav ul a:hover{
+    color: #FBBF24;
+    
+}
+.navigation nav ul a li{
+    list-style: none;
+}
+
+header .btnPay{
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+.btnPay a{
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background-color: #f3c921;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btnPay a:hover{
+    background-color: #e6b91e;
+}
+.btnPay:hover{
+    transform: scale(1.05);
+}
+
+#prog{
+    color: #FBBF24;
+    font-weight: bold;
+}
+
+
+.hamburger-menu{
+    display: none;
+}
+.hamburger-menu .fa-bars{
+    display: none;
+}
+.close-menu{
+    display: none;
+}
+.close-menu .fa-xmark{
+    display: none;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 200px auto;
+}
+main .annonce{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+main .annonce h2{
+    color: #0275b3;
+    font-size: 1.9rem;
+}
+main .annonce p{
+    color: #4B5563;
+    font-size: 1rem;
+    width: 800px;
+    text-align: center;
+}
+main .annonce p span{
+    font-weight: bold;
+}
+main .box-prog{
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 40px;
+    padding: 0 70px 40px 70px;
+}
+
+.box-prog .box-item{
+    position: relative;
+    border-radius: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 30px;
+    gap: 10px;
+}
+.box-prog .box-item h4{
+    color: white;
+    background-color: #1E40AF;
+    padding: 4px 20px;
+}
+.box-prog .box-item:nth-child(1){
+    border-left: solid 5px green;
+    box-shadow: 5px 5px 1px rgba(0, 128, 0, 0.251);
+}
+.box-prog .box-item:nth-child(2){
+    border-left: solid 5px #dfb04a;
+    box-shadow: 5px 5px 1px #dfb04a4f;
+}
+.box-prog .box-item:nth-child(3){
+    border-left: solid 5px #1E40AF;
+    box-shadow: 5px 5px 1px #1e40af4c;
+}
+.box-prog .box-item:nth-child(4){
+    border-left: solid 5px #af1eaf;
+    box-shadow: 5px 5px 1px #af1eaf40;
+}
+.box-prog .box-item:nth-child(5){
+    border-left: solid 5px #000000;
+    box-shadow: 5px 5px 1px #00000040;
+}
+
+.box-prog .box-item h3{
+    font-size: 1.2rem;
+}
+.box-prog .box-item:nth-child(1) h3{
+    color: green;
+}
+.box-prog .box-item:nth-child(2) h3{
+    color: #dfb04a;
+}
+.box-prog .box-item:nth-child(3) h3{
+    color: #1E40AF;
+}
+.box-prog .box-item:nth-child(4) h3{
+    color: #af1eaf;
+}
+.box-prog .box-item:nth-child(5) h3{
+    color: rgb(0, 0, 0);
+}
+.box-prog .box-item ul{
+    padding-left: 15px;
+}
+.box-prog .box-item ul li{
+    font-size: 0.9rem;
+    color: #4B5563;
+    line-height: 1.6;
+}
+.box-prog .box-item ul li span{
+    font-weight: bold;
+}
+
+footer{
+    background: #003C4B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 30px 0;
+}
+#slogan-AEST{
+    margin-top: 17px;
+    color: #D1D5DB;
+    font-size: 0.9rem;
+}
+footer a{
+    color: #FFCC00;
+}
+
+#btnPay2{
+    display: none;
+}
+
+.box-item .liste{
+    display: none;
+}
+.box-item .btnPlus{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: #4B5563;
+    font-size: 1.2rem;
+    padding: 5px 7px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.box-item .btnPlus:hover{
+    background-color: rgba(220, 220, 220, 0.438);
+}
+
+
+
+@media (max-width: 768px) {
+    .hamburger-menu{
+        display: flex;
+        align-items: center;
+    }
+    .hamburger-menu .fa-bars{
+        display: flex;
+        color: white;
+        font-size: 2rem;
+    }
+    .close-menu .fa-xmark{
+        display: flex;
+        color: white;
+        font-size: 2rem;
+    }
+    .template-programme header{
+        padding: 20px 10px 20px 10px;
+    }
+    header .logo h1{
+        font-size: 1.6rem;
+    }
+    .logo .logo-AEST{
+        height: 42px;
+        width: 50px;
+        overflow: hidden;
+    }
+    .logo .logo-AEST img{
+        height: 42px;
+        width: 50px;
+        object-fit: cover;
+    }
+    .navigation{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #3333338f;
+        height: 100vh;
+        width: 100%;
+        transform: translate(-1200px);
+        transition: all 0.3s ease;
+    }
+    .navigation nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #00334F;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 300px;
+        align-items: center;
+    }
+    .navigation nav .close-menu i{
+        font-size: 2.3rem;
+        color: gainsboro;
+    }
+    .navigation nav .close-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 70px;
+    }
+    .navigation nav ul{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        border-top: solid 1px gray;
+        padding: 0 5px;
+        padding-top: 20px;
+    }
+    .navigation nav ul a{
+        font-size: 1.4rem;
+        background-color: #004c75;
+        padding: 10px 40px;
+        border-radius: 5px;
+    }
+    #btnPay2{
+        display: flex;
+        margin-top: 20px;
+    }
+    #btnPay2 a{
+        color: #003366;
+        text-decoration: none;
+        background-color: #FBBF24;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 7px;
+        transition: all 0.3s ease;
+    }
+    #btnPay2 a:hover{
+        background-color: #f8c84f;
+        transform: scale(1.05);
+    }
+    
+    main{
+        grid-template-rows: 200px auto;
+    }
+    main .annonce p{
+        width: 90%;
+        font-size: 0.9rem;
+    }
+
+    main .box-prog{
+        gap: 30px;
+        padding: 0 10px 30px 10px;
+    }
+
+    .box-prog .box-item{
+        padding-left: 20px;
+        gap: 10px;
+    }
+    .box-prog .box-item h3{
+        font-size: 0.9rem;
+    }
+    .box-prog .box-item ul li{
+        font-size: 0.8rem;
+    }
+
+    footer{
+        font-size: 0.8rem;
+        padding: 20px;
+        text-align: center;
+    }
+    footer p:nth-child(1){
+        line-height: 1.4;
+    }
+    
+    #slogan-AEST{
+        font-size: 0.77rem;
+    }
+    header .btnPay{
+        display: none;
+    }
+
+    .box-item .btnPlus{
+        right: 10px;
+    }
+    .box-prog .box-item h3{
+        font-size: 0.9rem;
+        padding-right: 20px;
+    }
+
+}

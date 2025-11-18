@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #003366, #00a8cc);
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.template-accueil header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #00334F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px 15px 20px;
+}
+header .logo{
+    font-family: 'BBH Sans Bogle', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.logo .logo-AEST{
+    height: 50px;
+    width: 60px;
+    overflow: hidden;
+}
+.logo .logo-AEST img{
+    height: 50px;
+    width: 60px;
+    object-fit: cover;
+}
+.logo h1{
+    color: white;
+    font-size: 2.3rem;
+}
+.logo h1 span{
+    color: rgb(218, 5, 5);
+}
+
+.navigation nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navigation{
+    margin-left: auto;
+}
+.navigation nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+.navigation nav ul a:hover{
+    color: #FBBF24;
+    
+}
+.navigation nav ul a li{
+    list-style: none;
+}
+
+header .btnPay{
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+.btnPay a{
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    background-color: #f3c921;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.btnPay a:hover{
+    background-color: #e6b91e;
+}
+.btnPay:hover{
+    transform: scale(1.05);
+}
+.hamburger-menu{
+    display: none;
+}
+.hamburger-menu .fa-bars{
+    display: none;
+}
+.close-menu{
+    display: none;
+}
+.close-menu .fa-xmark{
+    display: none;
+}
+
+.template-accueil .banner{
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.banner .box-info{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.banner .box-info #titre{
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgb(3, 108, 116);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.banner .box-info #Theme{
+    color: white;
+    font-size: 1.1rem;
+}
+.banner .box-info #Theme span{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.banner .box-info #date{
+    color: rgb(28, 28, 28);
+    font-size: 1.1rem;
+    color: white;
+}
+#date span{
+    font-weight: bold;
+}
+.banner .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.banner .btn-item{
+    background-color: #FFD633;
+    color: #003366;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.banner .btn-item:hover{
+    background-color: #fad852;
+    transform: scale(1.05);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding: 70px 0;
+}
+.sec{
+    background-color: white;
+    width: 850px;
+    border-radius: 20px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 30px 40px;
+}
+.info h3{
+    color: #00A8CC;
+    font-size: 1.5rem;
+}
+.info p{
+    color: #003366;
+    font-weight: 450;
+    text-align: center;
+}
+.inf a{
+    background-color: #FFD633;
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: all 0.3s ease;
+}
+.inf a:hover{
+    background-color: #fad852;
+    transform: scale(1.05);
+}
+.inf2 .box-social{
+    display: flex;
+    gap: 10px;
+}
+.inf2 .box-social .fa-whatsapp{
+    color: green;
+    font-size: 1.2rem;
+}
+.inf2 .box-social .fa-tiktok{
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+.inf2 .box-social .fa-linkedin{
+    color: rgb(3, 24, 130);
+    font-size: 1.4rem;
+}
+.inf2 .box-social-item{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.inf2 .box-social-item a{
+    color: #056bd0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.inf2 .box-social-item a:hover{
+    color: #042341;
+}
+
+footer{
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 30px 0;
+}
+#slogan-AEST{
+    margin-top: 17px;
+    color: #D1D5DB;
+    font-size: 0.9rem;
+}
+footer a{
+    color: #FFCC00;
+}
+#btnPay2{
+    display: none;
+}
+#home{
+    font-weight: bold;
+    color: #FBBF24;
+}
+
+#countdown{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#countdown .tag{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(213, 1, 1);
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+#countdown .tag span{
+    color: white;
+}
+#countdown .tag span:nth-child(1){
+    font-size: 2rem;
+    font-weight: bold;
+}
+#countdown .tag span:nth-child(2){
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+#countdown .end{
+    background-color: rgb(218, 5, 5);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px){
+    .template-accueil .banner{
+        gap: 20px;
+    }
+
+    .banner .logo{
+        font-size: 1rem;
+    }
+    .banner .logo-AEST{
+        height: 57px;
+        width: 70px;
+    }
+    .banner .logo-AEST img{
+        height: 57px;
+        width: 70px;
+    }
+    .banner .box-info{
+        text-align: center;
+        padding: 0 10px;
+    }
+    .banner .box-info #titre{
+        font-size: 1rem;
+    }
+    .banner .box-info #Theme{
+        color: white;
+        font-size: 0.9rem;
+    }
+    .banner .box-info #Theme span{
+        font-size: 0.9rem;
+        text-decoration: underline;
+    }
+    .banner .box-info #date{
+        font-size: 0.9rem;
+        color: white;
+    }
+
+    .banner .btn{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner .btn-item{
+        width: 230px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-align: center;
+    }
+
+    main{
+        gap: 50px;
+        padding: 40px 0;
+    }
+    .sec{
+        background-color: white;
+        width: 350px;
+        border-radius: 10px;
+    }
+    .info{
+        text-align: center;
+        gap: 15px;
+        padding: 20px 16px;
+    }
+    .info h3{
+        font-size: 1.3rem;
+    }
+    .info p{
+        font-size: 0.8rem;
+    }
+    .inf a{
+        font-size: 0.8rem;
+    }
+    .inf2 .box-social{
+        gap: 5px;
+    }
+    .inf2 .box-social .fa-whatsapp{
+        color: green;
+        font-size: 1.1rem;
+    }
+    .inf2 .box-social .fa-tiktok{
+        color: rgb(0, 0, 0);
+        font-size: 1.1rem;
+    }
+    .inf2 .box-social-item{
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+    .inf2 .box-social-item a{
+        color: #056bd0;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    
+    footer{
+        font-size: 0.8rem;
+        padding: 20px;
+        text-align: center;
+    }
+    footer p:nth-child(1){
+        line-height: 1.4;
+    }
+    #slogan-AEST{
+        font-size: 0.77rem;
+    }
+    header .btnPay{
+        display: none;
+    }
+    .hamburger-menu{
+        display: flex;
+        align-items: center;
+    }
+    .hamburger-menu .fa-bars{
+        display: flex;
+        color: white;
+        font-size: 2rem;
+    }
+    .close-menu .fa-xmark{
+        display: flex;
+        color: white;
+        font-size: 2rem;
+    }
+    .template-programme header{
+        padding: 20px 10px 20px 10px;
+    }
+    header .logo h1{
+        font-size: 1.6rem;
+    }
+    .logo .logo-AEST{
+        height: 42px;
+        width: 50px;
+        overflow: hidden;
+    }
+    .logo .logo-AEST img{
+        height: 42px;
+        width: 50px;
+        object-fit: cover;
+    }
+    .navigation{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #3333338f;
+        height: 100vh;
+        width: 100%;
+        transform: translate(-1200px);
+        transition: all 0.3s ease;
+    }
+    .navigation nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #00334F;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 300px;
+        align-items: center;
+    }
+    .navigation nav .close-menu i{
+        font-size: 2.3rem;
+        color: gainsboro;
+    }
+    .navigation nav .close-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 70px;
+    }
+    .navigation nav ul{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        border-top: solid 1px gray;
+        padding: 0 5px;
+        padding-top: 20px;
+    }
+    .navigation nav ul a{
+        font-size: 1.4rem;
+        background-color: #004c75;
+        padding: 10px 40px;
+        border-radius: 5px;
+    }
+    #btnPay2{
+        display: flex;
+        margin-top: 20px;
+    }
+    #btnPay2 a{
+        color: #003366;
+        text-decoration: none;
+        background-color: #FBBF24;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 7px;
+        transition: all 0.3s ease;
+    }
+    #btnPay2 a:hover{
+        background-color: #f8c84f;
+        transform: scale(1.05);
+    }
+
+    #countdown .tag{
+        height: 80px;
+        width: 80px;
+        gap: 2px;
+    }
+    #countdown .tag span:nth-child(1){
+        font-size: 1.8rem;
+    }
+    #countdown .tag span:nth-child(2){
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
+    
+}
